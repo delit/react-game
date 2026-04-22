@@ -1,0 +1,66 @@
+# REACT! — Web Version
+
+Multiplayer reaction speed game. Runs in the browser, installable as a PWA.
+
+---
+
+## Deploy to GitHub Pages (step by step)
+
+### 1. Create a GitHub repo
+Go to https://github.com/new and create a new repo.
+Name it something like `react-game`.
+
+### 2. Update vite.config.js
+Open `vite.config.js` and change the `base` to match your repo name:
+```js
+base: '/react-game/',   // ← replace with your actual repo name
+```
+
+### 3. Push this folder to GitHub
+```bash
+cd react-game-web
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/YOURUSERNAME/react-game.git
+git push -u origin main
+```
+
+### 4. Enable GitHub Pages
+1. Go to your repo on GitHub
+2. Click **Settings** → **Pages**
+3. Under **Source**, select **GitHub Actions**
+4. Save
+
+### 5. Wait ~1 minute
+GitHub will automatically build and deploy.
+Your game will be live at:
+```
+https://YOURUSERNAME.github.io/react-game/
+```
+
+---
+
+## Run locally
+```bash
+npm install
+npm run dev
+```
+Open http://localhost:5173/react-game/
+
+---
+
+## Install as PWA (on phone)
+1. Open the game URL in Chrome (Android) or Safari (iOS)
+2. Android: tap the three-dot menu → "Add to Home Screen"
+3. iOS: tap the Share button → "Add to Home Screen"
+
+The game will install like a native app — full screen, no browser UI.
+
+---
+
+## Notes
+- No server needed — fully static
+- Works offline after first load (PWA)
+- Add icon-192.png and icon-512.png to /public/ for proper app icons
