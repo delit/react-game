@@ -62,5 +62,5 @@ The game will install like a native app — full screen, no browser UI.
 
 ## Notes
 - No server needed — fully static
-- Works offline after first load (PWA)
-- Add icon-192.png and icon-512.png to /public/ for proper app icons
+- Works offline after first load (PWA; service worker from `vite-plugin-pwa`)
+- App icons live in `/public/` (`icon-192.png`, `icon-512.png`, `apple-touch-icon.png`)
